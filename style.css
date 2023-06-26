@@ -26,6 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .clock span {
@@ -47,4 +48,35 @@ body {
     width: 8px;
     background-color: #ffffff;
     border-radius: 50%;
+}
+
+#hour, #min, #sec {
+    position: absolute;
+    border-radius: 8px;
+}
+
+#hour {
+    height: 31%;
+    width: 5px;
+    top: 20%;
+    left: 49.5%;
+    z-index: 1;
+    background-color: #61afff;
+}
+
+#min {
+    height: 38%;
+    width: 3px;
+    top: 13%;
+    left: 49.5%;
+    z-index: 2;
+    background-color: #61afff;
+}
+
+#sec {
+    height: 39%;
+    width: 1px;
+    top: 12%;
+    z-index: 3;
+    background-color: #ee791a;
 }
